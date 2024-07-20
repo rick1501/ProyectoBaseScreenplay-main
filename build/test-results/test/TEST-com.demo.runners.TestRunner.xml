@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.runners.TestRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-20T20:29:51" hostname="RICK" time="0.007">
+  <properties/>
+  <testcase name="initializationError" classname="com.demo.runners.TestRunner" time="0.007">
+    <failure message="io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/rickn/Music/ProyectoBaseScreenplay-main/src/test/resources/features/demoqa.feature&#10;(9:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Esquema del escenario : Interacción exitosa con el módulo Elements'&#10;(10:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando el usuario navega a Elements seccion TextBox'&#10;(11:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Y intectarua con los elementos de la seccion'&#10;(12:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got '|fullname|email|currentAdrress|permanentAddress|'&#10;(13:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces validamos la informacion ingresada &lt;Mensaje&gt;'&#10;(14:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Ejemplos:'&#10;(15:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '|fullname|email|currentAdrress|permanentAddress|mensaje|'&#10;(16:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '|Ricardo|ricardo@gmail.com|Cra 34 # 23 -34|Cra 34 # 23 -34|Name:Ricardo|'&#10;(19:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Esquema del escenario : Interacción exitosa con el módulo Forms'&#10;(20:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando el usuario navega a la sección &lt;seccion&gt;'&#10;(21:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces el usuario puede interactuar con los formularios de la sección &lt;seccion&gt;'" type="io.cucumber.core.gherkin.FeatureParserException">io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/rickn/Music/ProyectoBaseScreenplay-main/src/test/resources/features/demoqa.feature
+(9:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Esquema del escenario : Interacción exitosa con el módulo Elements'
+(10:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando el usuario navega a Elements seccion TextBox'
+(11:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Y intectarua con los elementos de la seccion'
+(12:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got '|fullname|email|currentAdrress|permanentAddress|'
+(13:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces validamos la informacion ingresada &lt;Mensaje&gt;'
+(14:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Ejemplos:'
+(15:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '|fullname|email|currentAdrress|permanentAddress|mensaje|'
+(16:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '|Ricardo|ricardo@gmail.com|Cra 34 # 23 -34|Cra 34 # 23 -34|Name:Ricardo|'
+(19:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Esquema del escenario : Interacción exitosa con el módulo Forms'
+(20:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Cuando el usuario navega a la sección &lt;seccion&gt;'
+(21:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Entonces el usuario puede interactuar con los formularios de la sección &lt;seccion&gt;'
+	at app//io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:56)
+	at app//io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:46)
+	at java.base@11.0.23/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+	at app//io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+	at java.base@11.0.23/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at app//io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at app//io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at app//io.cucumber.junit.CucumberSerenityBaseRunner.parseFeaturesEarly(CucumberSerenityBaseRunner.java:213)
+	at app//io.cucumber.junit.CucumberSerenityRunner.&lt;init&gt;(CucumberSerenityRunner.java:41)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity.&lt;init&gt;(CucumberWithSerenity.java:12)
+	at java.base@11.0.23/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.23/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.23/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.23/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at app//org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at app//org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:77)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.23/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.23/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J(W): Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J(W): Ignoring binding found at [jar:file:/C:/Users/rickn/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.10/f69d97ef3335c6ab82fc21dfb77ac613f90c1221/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J(W): See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+]]></system-err>
+</testsuite>
